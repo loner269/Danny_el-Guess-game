@@ -274,6 +274,9 @@ section {
   .bal {
     margin-right: 0%;
   }
+  .balance-container{
+    display: inline;
+  }
   .stake-buttons {
     display: flex;
     justify-content: center;
