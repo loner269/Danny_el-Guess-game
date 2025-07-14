@@ -259,7 +259,6 @@ section {
     font-size: 10px;
   }
   main {
-    padding: 0.2rem;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -273,7 +272,7 @@ section {
     width: 100px;
   }
   .bal {
-    margin-right: 2px;
+    margin-right: 0%;
   }
   .stake-buttons {
     display: flex;
