@@ -29,7 +29,7 @@ document.addEventListener('click', function () {
 document.getElementById('myBets').addEventListener('click', () => {
     let hl = document.getElementById('historyList')
     hl.classList.toggle('show')
-    document.getElementById('pastResultsDisplay').classList.toggle('show')
+    document.getElementById('pastResultsDisplay').classList.remove('show')
     if (!localStorage.getItem('betHistory')) {
         let div = document.createElement('div')
         div.style.height = '100%'
