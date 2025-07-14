@@ -24,7 +24,7 @@ section {
   max-width: 1000px;
   padding: 0.5rem;
 }
-#historyList{
+#historyList {
   background-color: rgb(22, 22, 22);
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgb(129, 116, 116);
@@ -34,7 +34,7 @@ section {
   min-width: 200px;
   max-height: 60vh;
   overflow: auto;
-  position:sticky;
+  position: sticky;
   top: 100px;
   z-index: 1;
   scrollbar-width: thin;
@@ -48,7 +48,7 @@ h1 span {
   color: var(--primary-color);
   text-shadow: var(--text-glow);
 }
-.bhl{
+.bhl {
   display: none;
 }
 
@@ -106,7 +106,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-.bal{
+.bal {
   font-size: medium;
   margin-right: 7px;
   font-family: serif;
@@ -132,8 +132,8 @@ header {
 .show {
   display: block;
 }
-main{
-  width:100%;
+main {
+  width: 100%;
 }
 .result-container {
   background: rgba(255, 255, 255, 0.05);
@@ -159,8 +159,8 @@ main{
   padding: 0.3rem;
   transition: background 0.2s, transform 0.2s;
 }
-.result-container p:hover{
-  background-color:#00f2ff;
+.result-container p:hover {
+  background-color: #00f2ff;
 }
 .result-container p.win {
   background-color: var(--success-color);
@@ -187,7 +187,7 @@ section {
   justify-content: space-around;
   width: 100%;
 }
-.div{
+.div {
   font-size: medium;
   font-family: serif;
 }
@@ -238,13 +238,59 @@ section {
     transform: translateX(0);
   }
 }
-@media (max-width: 768px) {
-  .result-container {
-    grid-template-columns: repeat(10, 1fr);
+@media screen and (max-width: 760px) {
+  header,
+  main,
+  section {
+    max-width: 1000px;
+    padding: 0.2rem;
   }
-
+  h1 {
+    font-size: medium;
+  }
+  h3 {
+    font-size: small;
+  }
+  span,
+  p {
+    font-size: smaller;
+  }
+  .result-container {
+    grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    padding: 5px 10px;
+    column-gap: 0.4rem;
+  }
   button {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
+    padding: 5px;
+    font-size: 10px;
+  }
+  main {
+    padding: 0.2rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  input[type='text'],
+  input[type='number'] {
+    padding: 0.3;
+    font-size: small;
+    margin: 0.2rem 0;
+    width: 100px;
+  }
+  .bal {
+    margin-right: 2px;
+  }
+  .stake-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  #historyList {
+    top: 50px;
+    position: absolute;
+    right: 10px;
+    max-width: 200px;
+    min-width: 150px;
+    font-size: medium;
   }
 }
