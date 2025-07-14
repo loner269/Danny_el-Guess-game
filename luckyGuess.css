@@ -280,6 +280,7 @@ section {
     flex-wrap: wrap;
   }
   #historyList {
+    background-color: black;
     top: 50px;
     position: absolute;
     right: 5px;
