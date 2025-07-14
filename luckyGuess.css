@@ -239,12 +239,6 @@ section {
   }
 }
 @media screen and (max-width: 760px) {
-  header,
-  main,
-  section {
-    max-width: 1000px;
-    padding: 0.2rem;
-  }
   h1 {
     font-size: medium;
   }
@@ -288,9 +282,9 @@ section {
   #historyList {
     top: 50px;
     position: absolute;
-    right: 10px;
+    right: 5px;
     max-width: 200px;
     min-width: 150px;
-    font-size: medium;
+    font-size: small;
   }
 }
