@@ -278,6 +278,7 @@ section {
   .stake-buttons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
   #historyList {
     top: 50px;
